@@ -15,7 +15,7 @@ class NoteUpdateRequest {
 }
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/notes")
 @AllArgsConstructor
 public class NoteController {
