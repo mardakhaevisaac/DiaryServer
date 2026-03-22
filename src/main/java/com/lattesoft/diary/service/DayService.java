@@ -20,7 +20,7 @@ public class DayService {
 
     public Day getDayById(Long id) {
         return dayRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Day not found."));
+                .orElse(null);
     }
 
     @Transactional
